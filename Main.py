@@ -65,7 +65,7 @@ root.geometry("720x480")
 root.minsize(720, 480)
 
 #attributes
-root.attributes("-fullscreen", "True")
+root.attributes("-fullscreen", "False")
 
 #create content frame
 content_frame = ctk.CTkFrame(root)
