@@ -71,8 +71,12 @@ root.attributes("-fullscreen", "False")
 content_frame = ctk.CTkFrame(root)
 content_frame.pack(fill=ctk.BOTH, expand=True, padx=10, pady=10)
 
+title = ctk.CTkLabel(content_frame, text="YTD")
+title.pack(pady=(10,5))
+title.cget("font").configure(size=20)
+
 #create label and entry widget
-url_label = ctk.CTkLabel(content_frame, text="Enter YT url")
+url_label = ctk.CTkLabel(content_frame, text="Enter YT video link or playlist link (will download ALL content on playlist, may not work on private or unlisted playlists).")
 entry_url = ctk.CTkEntry(content_frame, width=400, height=40)
 url_label.pack(pady=(10, 5))
 entry_url.pack(pady=(10, 5))
