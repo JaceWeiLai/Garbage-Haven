@@ -30,6 +30,7 @@ def Button_clicked():
 def Download_video(next, Sub=""):
     try:
         yt = YouTube(next, on_progress_callback=on_progress)
+        ##stream = yt.streams.filter(file_extension="mp4", res="1080p").first()
         stream = yt.streams.filter(only_audio=True).first()
         
         #download
