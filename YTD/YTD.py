@@ -4,7 +4,7 @@ from tkinter import ttk
 from pytube import YouTube
 from pytube import Playlist
 import os
-from kivy.core.clipboard import clipboard as Cb
+#from kivy.core.clipboard import clipboard as Cb
 
 def Button_clicked():
     url = entry_url.get()
