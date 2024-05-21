@@ -1,6 +1,5 @@
 
 import customtkinter as ctk
-from tkinter import ttk
 from pytube import YouTube
 from pytube import Playlist
 import os
